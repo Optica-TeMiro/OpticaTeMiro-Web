@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VisitasService } from './visitas.service'; // revisar que la ruta sea correcta
+import { VisitasService } from '../../visitas.service'; // revisar que la ruta sea correcta
 
 @Component({
   selector: 'app-indice-adm',

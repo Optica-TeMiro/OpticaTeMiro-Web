@@ -11,13 +11,10 @@ import { DashboardAdminModule } from './dashboardadmin/dashboardadmin.module';
 import { HomeModule }          from './home/home.module';
 import { RouterModule }        from '@angular/router';
 
-import { IndiceAdmComponent }  from './dashboardadmin/indice-adm/indice-adm.component'; // Importa tu componente aquí
-
-
 @NgModule({
   declarations: [
-    AppComponent,
-    IndiceAdmComponent  // Asegúrate de incluir todos los componentes que necesites usar
+    AppComponent
+    // IndiceAdmComponent  // Este componente debe ser eliminado de aquí
   ],
   imports: [
     BrowserModule,
@@ -27,13 +24,11 @@ import { IndiceAdmComponent }  from './dashboardadmin/indice-adm/indice-adm.comp
     ComunModule,
     DashboardModule,
     HomeModule,
-    DashboardAdminModule,
+    DashboardAdminModule,  // Esto permite el uso de IndiceAdmComponent sin declararlo aquí
     RouterModule
   ],
   providers: [
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { 
-  
-}
+export class AppModule { }
